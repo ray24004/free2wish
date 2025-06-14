@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --background: #0D0D0D;
+    --surface: #282e3a;
+    --text: #E0E0E0;
+    --accent1: #00FF7F;
+    --accent2: #9146FF;
+    --alert: #FF4500;
+    --reward: #FFD700;
+    --fontHeading: "Audiowide", sans-serif;
+    --fontBody: "Poppins", sans-serif;
+}
+
+body {
+    color: var(--text);
+    background-color: var(--background);
+    font-family: var(--fontBody);
+
+    display: flex;
+    flex-direction: column;
+}
+
+#gameGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    gap: 1rem;
+}
+
+#gameGrid article {
+    background-color: var(--surface);
+    border-radius: 1rem;
+}
+
+h1, h2, h3, h4 {
+    color: var(--accent1);
+    font-family: var(--fontHeading);
+    text-align: center;
+}
+
+#gameGrid a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: var(--text);
+}
+
+#gameGrid p {
+    text-align: center;
+}
+
+button {
+    background-color: var(--accent2);
+    font-family: var(--fontBody);
+    border: 0;
+    border-radius: 1rem;
+    padding: .5rem 1rem;
+    margin: 1rem;
+    color: var(--text);
+    font-weight: bold;
+    font-size: 1rem;
+}
