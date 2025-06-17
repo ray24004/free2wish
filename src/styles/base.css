@@ -21,7 +21,7 @@ body {
   flex-direction: column;
 }
 
-.surfaceBox {
+.surface-box {
   background-color: var(--surface);
   border-radius: 1rem;
   padding: 1rem;
