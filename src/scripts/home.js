@@ -1,4 +1,4 @@
-import { fetchGames } from './shared/free-to-play.js';
+import { fetchGames } from './modules/free-to-play.js';
 
 const gameGrid = document.querySelector('#gameGrid');
 const gameTemplate = document.querySelector('#gameTemplate');
