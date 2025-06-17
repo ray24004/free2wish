@@ -21,15 +21,10 @@ body {
   flex-direction: column;
 }
 
-#gameGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
-  gap: 1rem;
-}
-
-#gameGrid article {
+.surface-box {
   background-color: var(--surface);
   border-radius: 1rem;
+  padding: 1rem;
 }
 
 h1,
@@ -41,15 +36,8 @@ h4 {
   text-align: center;
 }
 
-#gameGrid a {
-  display: flex;
-  flex-direction: column;
-  text-decoration: none;
-  color: var(--text);
-}
-
-#gameGrid p {
-  text-align: center;
+a, a:visited {
+  color: var(--accent2);
 }
 
 button {
