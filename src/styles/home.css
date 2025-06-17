@@ -14,3 +14,7 @@
 #gameGrid p {
   text-align: center;
 }
+
+.surface-box {
+  padding: 0;
+}

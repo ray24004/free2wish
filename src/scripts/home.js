@@ -22,6 +22,7 @@ function loadMoreGames() {
     gameItem.querySelector('img').src = game.thumbnail;
     gameItem.querySelector('.year').innerHTML = game.release_date.split('-')[0];
     gameItem.querySelector('.genre').innerHTML = game.genre;
+    gameItem.querySelector('a').href = `/game?id=${game.id}`
 
     gameGrid.appendChild(gameItem);
   }
