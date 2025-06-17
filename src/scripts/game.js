@@ -1,11 +1,15 @@
 import freeToPlay from './modules/freeToPlay.js';
 
-const thumbnail = document.querySelector('#thumbnail');
+const screenshot = document.querySelector('#screenshot');
 const title = document.querySelector('#title');
 const description = document.querySelector('#description');
 const genre = document.querySelector('#genre');
 const year = document.querySelector('#year');
 const site = document.querySelector('#site');
+
+screenshot.addEventListener('load', () => {
+  screenshot.hidden = false;
+});
 
 async function init() {
     const gameId = new URLSearchParams(window.location.search).get('id');
@@ -15,8 +19,9 @@ async function init() {
         window.location.href = '/index';
     }
 
-    thumbnail.src = game.screenshots[0].image;
-    thumbnail.alt = `${game.title} screenshot`;
+    screenshot.src = game.screenshots[0].image;
+    screenshot.alt = `${game.title} screenshot`;
+    screenshot.hidden = true;
 
     title.textContent = game.title;
     description.textContent = game.description;
