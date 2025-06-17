@@ -25,6 +25,10 @@ section > p {
     align-self: normal;
 }
 
+dl {
+    align-self: normal;
+}
+
 dl > div {
     display: flex;
     gap: .5rem;
@@ -33,4 +37,5 @@ dl > div {
 dd {
     margin: 0;
     font-weight: bold;
+    overflow-wrap: anywhere;
 }

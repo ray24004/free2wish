@@ -1,4 +1,4 @@
-import { fetchGames } from './modules/free-to-play.js';
+import freeToPlay from './modules/freeToPlay.js';
 
 const gameGrid = document.querySelector('#gameGrid');
 const gameTemplate = document.querySelector('#gameTemplate');
@@ -8,7 +8,7 @@ let gameList = [];
 let gamesStart = 0;
 let gamesCount = 6;
 
-fetchGames().then((games) => {
+freeToPlay.getGames().then((games) => {
   gameList = games;
   loadMoreGames();
 });
