@@ -1,6 +1,7 @@
 #gameGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  width: 100%;
   gap: 1rem;
 }
 
@@ -29,4 +30,10 @@
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
   font-size: 1rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

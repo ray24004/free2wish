@@ -35,7 +35,6 @@ function loadMoreGames() {
   }
   gamesStart += gamesCount;
 
-  loadGamesButton.hidden = gamesEnd >= gamesBatch.length;
 }
 
 searchInput.addEventListener('input', filterResults);
