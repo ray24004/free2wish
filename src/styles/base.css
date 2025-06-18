@@ -61,7 +61,7 @@ button {
 
 header {
   background-color: var(--surface);
-  padding: .25rem;
+  padding: 0.25rem;
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
