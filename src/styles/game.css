@@ -1,41 +1,41 @@
 body {
-    margin: 0;
+  margin: 0;
 }
 
 section {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 section > *:not(img) {
-    margin: 1rem 2rem;
+  margin: 1rem 2rem;
 }
 
 img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 section > div {
-    align-self: flex-end;
+  align-self: flex-end;
 }
 
 section > p {
-    align-self: normal;
+  align-self: normal;
 }
 
 dl {
-    align-self: normal;
+  align-self: normal;
 }
 
 dl > div {
-    display: flex;
-    gap: .5rem;
+  display: flex;
+  gap: 0.5rem;
 }
 
 dd {
-    margin: 0;
-    font-weight: bold;
-    overflow-wrap: anywhere;
+  margin: 0;
+  font-weight: bold;
+  overflow-wrap: anywhere;
 }
