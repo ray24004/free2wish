@@ -1,8 +1,12 @@
-await injectPartial('header', document.querySelector('#header'));
-await injectPartial('footer', document.querySelector('#footer'));
+init();
 
-initMenu();
-initFooter();
+async function init() {
+  await injectPartial('header', document.querySelector('#header'));
+  await injectPartial('footer', document.querySelector('#footer'));
+
+  initMenu();
+  initFooter();
+}
 
 async function injectPartial(partialName, targetElement) {
   const partialFetch = await fetch(`/partials/${partialName}.html`);
