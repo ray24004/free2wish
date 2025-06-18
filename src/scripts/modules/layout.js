@@ -14,7 +14,7 @@ function initMenu() {
   const nav = document.querySelector('#header nav');
   const body = document.querySelector('body');
 
-  button.addEventListener('click', (ev) => {
+  button.addEventListener('click', () => {
     nav.classList.toggle('hidden');
     body.classList.toggle('no-scroll');
 
