@@ -1,5 +1,5 @@
 async function injectPartial(partialName, targetElement) {
-    let partialFetch = await fetch(`/src/partials/${partialName}.html`);
+    let partialFetch = await fetch(`/partials/${partialName}.html`);
     targetElement.innerHTML = await partialFetch.text();
 }
 

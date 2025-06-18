@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/home.css" />
     <script type="module" src="scripts/home.js"></script>
+    <script type="module" src="scripts/modules/layout.js"></script>
 
     <meta property="og:title" content="Free to wish games" />
     <meta property="og:description" content="Free to wish games" />
@@ -19,14 +20,7 @@
     <meta property="og:url" content="https://free2wish.netlify.app/" />
   </head>
   <body>
-    <header>
-      <img src="/logo.webp" alt="" width="64" height="64" />
-      <button>☰</button>
-      <nav class="hidden">
-        <a href="/">Home</a>
-        <a href="/wishlist">My Wishlist</a>
-      </nav>
-    </header>
+    <header id="header"></header>
     
     <main>
       <section id="searchSection">
@@ -52,8 +46,6 @@
       <button id="loadGamesButton">Load More</button>
     </main>
 
-    <footer>
-      <p>&copy; <span id="copyYear">2025</span> - Wesley Raymundo</p>
-    </footer>
+    <footer id="footer"></footer>
   </body>
 </html>

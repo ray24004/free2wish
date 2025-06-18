@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/game.css" />
     <script type="module" src="scripts/game.js"></script>
+    <script type="module" src="scripts/modules/layout.js"></script>
 
     <meta property="og:title" content="Free to wish games" />
     <meta property="og:description" content="Free to wish games" />
@@ -19,29 +20,35 @@
     <meta property="og:url" content="https://free2wish.netlify.app/" />
   </head>
   <body>
-    <h1>Free 2 Wish Games</h1>
-    <section>
-      <img id="screenshot" src="" alt="Game screenshot" />
-      <h2 id="title"></h2>
-      <div>
-        <label for="wishlist">Add to wishlist</label>
-        <input type="checkbox" id="wishlist" />
-      </div>
-      <dl>
+    <header id="header"></header>
+    
+    <main>
+      <h1>Free 2 Wish Games</h1>
+      <section>
+        <img id="screenshot" src="" alt="Game screenshot" />
+        <h2 id="title"></h2>
         <div>
-          <dt>Genre:</dt>
-          <dd id="genre"></dd>
+          <label for="wishlist">Add to wishlist</label>
+          <input type="checkbox" id="wishlist" />
         </div>
-        <div>
-          <dt>Release year:</dt>
-          <dd id="year"></dd>
-        </div>
-        <div>
-          <dt>Website:</dt>
-          <dd><a id="site" href="#"></a></dd>
-        </div>
-      </dl>
-      <p class="surface-box" id="description"></p>
-    </section>
+        <dl>
+          <div>
+            <dt>Genre:</dt>
+            <dd id="genre"></dd>
+          </div>
+          <div>
+            <dt>Release year:</dt>
+            <dd id="year"></dd>
+          </div>
+          <div>
+            <dt>Website:</dt>
+            <dd><a id="site" href="#"></a></dd>
+          </div>
+        </dl>
+        <p class="surface-box" id="description"></p>
+      </section>
+    </main>
+
+    <footer id="footer"></footer>
   </body>
 </html>
