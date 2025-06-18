@@ -19,29 +19,41 @@
     <meta property="og:url" content="https://free2wish.netlify.app/" />
   </head>
   <body>
-    <h1>Free 2 Wish Games</h1>
+    <header>
+      <img src="/logo.webp" alt="" width="64" height="64" />
+      <button>☰</button>
+      <nav class="hidden">
+        <a href="/">Home</a>
+        <a href="/wishlist">My Wishlist</a>
+      </nav>
+    </header>
+    
+    <main>
+      <section id="searchSection">
+        <h2>Search</h2>
+        <input id="search" type="search" placeholder="Type a game title..." />
+      </section>
 
-    <section id="searchSection">
-      <h2>Search</h2>
-      <input id="search" type="search" placeholder="Type a game title..." />
-    </section>
+      <section id="gameGrid">
+        <h2>Games</h2>
+        <template id="gameTemplate">
+          <article class="surface-box">
+            <a href="#">
+              <h3>Game</h3>
+              <img src="" alt="Game Thumbnail" />
+              <p>
+                <span class="year"></span> - <span class="genre"></span>
+              </p>
+            </a>
+          </article>
+        </template>
+      </section>
 
-    <section id="gameGrid">
-      <template id="gameTemplate">
-        <article class="surface-box">
-          <a href="#">
-            <h2>Title</h2>
-            <img
-              src="https://www.freetogame.com/g/582/thumbnail.jpg"
-              alt="Game"
-            />
-            <p>
-              <span class="year">year</span> - <span class="genre">genre</span>
-            </p>
-          </a>
-        </article>
-      </template>
-    </section>
-    <button id="loadGamesButton">Load More</button>
+      <button id="loadGamesButton">Load More</button>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="copyYear">2025</span> - Wesley Raymundo</p>
+    </footer>
   </body>
 </html>
