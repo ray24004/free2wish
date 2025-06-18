@@ -12,23 +12,23 @@ screenshot.addEventListener('load', () => {
 });
 
 async function init() {
-    const gameId = new URLSearchParams(window.location.search).get('id');
-    const game = await freeToPlay.getGame(gameId);
+  const gameId = new URLSearchParams(window.location.search).get('id');
+  const game = await freeToPlay.getGame(gameId);
 
-    if (game.status == 0) {
-        window.location.href = '/index';
-    }
+  if (game.status == 0) {
+    window.location.href = '/index';
+  }
 
-    screenshot.src = game.screenshots[0].image;
-    screenshot.alt = `${game.title} screenshot`;
-    screenshot.hidden = true;
+  screenshot.src = game.screenshots[0].image;
+  screenshot.alt = `${game.title} screenshot`;
+  screenshot.hidden = true;
 
-    title.textContent = game.title;
-    description.textContent = game.description;
-    genre.textContent = game.genre;
-    year.textContent = game.release_date.split('-')[0];
-    site.textContent = game.game_url.replace('https://www.', '');
-    site.href = game.game_url;
+  title.textContent = game.title;
+  description.textContent = game.description;
+  genre.textContent = game.genre;
+  year.textContent = game.release_date.split('-')[0];
+  site.textContent = game.game_url.replace('https://www.', '');
+  site.href = game.game_url;
 }
 
 init();
