@@ -115,3 +115,9 @@ footer {
   line-height: 3rem;
   margin-top: 2rem;
 }
+
+body.no-scroll {
+  overflow: hidden;
+  position: fixed;
+  width: 100vw;
+}
