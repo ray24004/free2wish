@@ -34,7 +34,6 @@ function loadMoreGames() {
     gameGrid.appendChild(gameItem);
   }
   gamesStart += gamesCount;
-
 }
 
 searchInput.addEventListener('input', filterResults);
