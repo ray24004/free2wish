@@ -36,9 +36,9 @@ async function init() {
   site.textContent = game.game_url.replace('https://www.', '');
   site.href = game.game_url;
 
-  esrb.textContent = rawgData.esrb_rating || 'n/a';
-  metacritic.textContent = rawgData.metacritic || 'n/a';
-  score.textContent = rawgData.score || 'n/a';
+  esrb.textContent = rawgData.esrb_rating;
+  metacritic.textContent = rawgData.metacritic;
+  score.textContent = rawgData.score;
 }
 
 init();

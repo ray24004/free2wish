@@ -13,14 +13,12 @@ const rawg = {
     const params = `search=${gameTitle}&search_exact=true&search_precise=true`;
     const search = await get('games', params);
 
-    const { metacritic, community_rating, esrb_rating, score } =
-      search.results[0];
+    const { metacritic, esrb_rating, score } = search.results?.[0] || {};
 
     return {
-      metacritic,
-      community_rating,
-      esrb_rating: esrb_rating.name,
-      score,
+      metacritic: metacritic || 'n/a',
+      esrb_rating: esrb_rating?.name || 'n/a',
+      score: score || 'n/a',
     };
   },
 };
