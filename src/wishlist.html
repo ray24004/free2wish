@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Free 2 Wish Games</title>
+
+    <meta name="description" content="Free to wish games" />
+    <meta name="author" content="Wesley Raymundo" />
+
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/home.css" />
+    <script type="module" src="scripts/wishlist.js"></script>
+    <script type="module" src="scripts/modules/layout.js"></script>
+
+    <meta property="og:title" content="Free to wish games" />
+    <meta property="og:description" content="Free to wish games" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="https://free2wish.netlify.app/" />
+  </head>
+  <body>
+    <header id="header"></header>
+
+    <main>
+      <h1>My wishlist</h1>
+      <section id="gameGrid">
+        <template id="gameTemplate">
+          <article class="surface-box">
+            <a href="#">
+              <h2>Game</h2>
+              <img src="" alt="Game Thumbnail" />
+              <p><span class="year"></span> - <span class="genre"></span></p>
+            </a>
+          </article>
+        </template>
+      </section>
+    </main>
+
+    <footer id="footer"></footer>
+  </body>
+</html>
