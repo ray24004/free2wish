@@ -20,7 +20,7 @@ const rawg = {
       metacritic,
       community_rating,
       esrb_rating: esrb_rating.name,
-      score
+      score,
     };
   },
 };
