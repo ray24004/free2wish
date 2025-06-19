@@ -13,7 +13,7 @@ async function get(endpoint) {
   return await response.json();
 }
 
-// Export functions
+// Expose abstracted API functions
 
 const freeToPlay = {
   async getGames() {
